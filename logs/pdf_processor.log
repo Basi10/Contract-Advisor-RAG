@@ -42,3 +42,35 @@ Total chunks: 330
 Total chunks: 732
 02-22-2024 16:15:37 : INFO : logger : 
 Total chunks: 732
+02-23-2024 08:58:49 : INFO : logger : PDF data loaded successfully.
+02-23-2024 08:58:49 : INFO : logger : Text preprocessing completed.
+02-23-2024 08:58:49 : INFO : logger : Text split using character splitter. Total chunks: 329
+02-23-2024 08:58:55 : INFO : logger : Text split using token splitter. Total chunks: 330
+02-23-2024 09:00:32 : INFO : logger : PDF data loaded successfully.
+02-23-2024 09:00:32 : INFO : logger : Text preprocessing completed.
+02-23-2024 09:00:32 : INFO : logger : Text split using character splitter. Total chunks: 732
+02-23-2024 09:00:37 : INFO : logger : Text split using token splitter. Total chunks: 732
+02-23-2024 09:02:33 : INFO : logger : PDF data loaded successfully.
+02-23-2024 09:02:33 : INFO : logger : Text preprocessing completed.
+02-23-2024 09:02:33 : INFO : logger : Text split using character splitter. Total chunks: 732
+02-23-2024 09:02:38 : INFO : logger : Text split using token splitter. Total chunks: 732
+02-23-2024 09:14:36 : INFO : logger : PDF data loaded successfully.
+02-23-2024 09:14:36 : INFO : logger : Text preprocessing completed.
+02-23-2024 09:14:36 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-23-2024 09:14:42 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-23-2024 09:24:52 : INFO : logger : PDF data loaded successfully.
+02-23-2024 09:24:52 : INFO : logger : Text preprocessing completed.
+02-23-2024 09:24:52 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-23-2024 09:24:58 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-23-2024 09:27:04 : INFO : logger : PDF data loaded successfully.
+02-23-2024 09:27:04 : INFO : logger : Text preprocessing completed.
+02-23-2024 09:27:04 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-23-2024 09:27:09 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-23-2024 09:28:54 : INFO : logger : PDF data loaded successfully.
+02-23-2024 09:28:54 : INFO : logger : Text preprocessing completed.
+02-23-2024 09:28:54 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-23-2024 09:28:59 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-23-2024 09:30:46 : INFO : logger : PDF data loaded successfully.
+02-23-2024 09:30:46 : INFO : logger : Text preprocessing completed.
+02-23-2024 09:30:46 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-23-2024 09:30:52 : INFO : logger : Text split using token splitter. Total chunks: 1064

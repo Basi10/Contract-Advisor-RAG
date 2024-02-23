@@ -47,8 +47,8 @@ class PDFProcessor:
         try:
             character_splitter = RecursiveCharacterTextSplitter(
                 separators=["\n\n", "\n", ". ", " ", ""],
-                chunk_size=1000,
-                chunk_overlap=0
+                chunk_size=350,
+                chunk_overlap=100
             )
             self.character_split_texts = character_splitter.split_text('\n\n'.join(self.pdf_texts))
             self.logger.info(f"Text split using character splitter. Total chunks: {len(self.character_split_texts)}")
