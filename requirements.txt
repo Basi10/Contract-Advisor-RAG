@@ -1,3 +1,5 @@
 langchain
 weaviate-client
 Flask
+pytest
+sentence_transformers
