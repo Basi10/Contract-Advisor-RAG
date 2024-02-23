@@ -77,4 +77,5 @@ class PDFProcessor:
         except Exception as e:
             self.logger.error(f"Error processing PDF: {e}")
             return None
-
+        
+        
