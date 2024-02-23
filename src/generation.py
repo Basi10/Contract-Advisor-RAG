@@ -6,11 +6,26 @@ from langchain.chat_models import ChatOpenAI
 class Generation:
             
     def __init__(self, model_name: str):
+        """
+        Initialize the Generation instance with OpenAI and ChatOpenAI.
+
+        Parameters:
+            model_name (str): Name of the model.
+        """
         self.client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
         llm_model = "gpt-3.5-turbo"
-        self.chat = ChatOpenAI(api_key=os.environ.get("OPENAI_API_KEY"),temperature=0.0, model=llm_model)
+        self.chat = ChatOpenAI(api_key=os.environ.get("OPENAI_API_KEY"), temperature=0.0, model=llm_model)
         
     def chats(self, message):
+        """
+        Get a response for a given message using the ChatOpenAI model.
+
+        Parameters:
+            message (str): Input message.
+
+        Returns:
+            str: Response from the model.
+        """
         return self.chat(message)
     
     def get_completion(
@@ -25,7 +40,23 @@ class Generation:
         logprobs=None,
         top_logprobs=None,
     ) -> str:
-        """Return the completion of the prompt."""
+        """
+        Get the completion of the prompt using the OpenAI chat API.
+
+        Parameters:
+            messages (list[dict[str, str]]): List of message dictionaries.
+            model (str): Name of the model.
+            max_tokens (int): Maximum number of tokens in the completion.
+            temperature (float): Sampling temperature for randomness.
+            stop (str): Text to stop generation at.
+            seed (int): Seed for randomness.
+            tools (str): Additional tools to use.
+            logprobs (int): Include log probabilities in the response.
+            top_logprobs (int): Include top log probabilities in the response.
+
+        Returns:
+            str: Completion of the prompt.
+        """
         params = {
             "model": model,
             "messages": messages,

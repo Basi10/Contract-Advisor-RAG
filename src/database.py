@@ -1,13 +1,18 @@
 import os
 from langchain_community.vectorstores import Weaviate
-from typing import (
-    Dict,
-)
+from typing import Dict
 
 class Database:
     
     def __init__(self, weaviate_client, embeddings, file_path):
-        
+        """
+        Initializes the Database instance.
+
+        Parameters:
+            weaviate_client: Weaviate client instance.
+            embeddings: Embeddings used for the Weaviate instance.
+            file_path: Path to the file being processed.
+        """
         file_name_without_extension, file_extension = os.path.splitext(os.path.basename(file_path))
         file_name_without_extension = file_name_without_extension.replace('.', ' ')
         new_file_name = file_name_without_extension.replace(' ', '')
@@ -25,6 +30,16 @@ class Database:
         self.embedding = embeddings
         
     def _default_schema(self, index_name: str, text_key: str) -> Dict:
+        """
+        Generates the default schema for Weaviate.
+
+        Parameters:
+            index_name: Name of the index.
+            text_key: Key for the text property.
+
+        Returns:
+            Dict: Default schema for Weaviate.
+        """
         return {
             "class": index_name,
             "properties": [
@@ -46,15 +61,18 @@ class Database:
         file_name_without_extension = file_name_without_extension.replace('.', ' ')
         new_file_name = file_name_without_extension.replace(' ', '')
         self.weaviate_client.schema.create_class(self._default_schema(os.path.basename(new_file_name), "text"))
-        Weaviate.from_texts(texts=token_split_texts, client=self.weaviate_client, embedding=self.embedding, index_name= os.path.basename(new_file_name))
+        Weaviate.from_texts(texts=token_split_texts, client=self.weaviate_client, embedding=self.embedding, index_name=os.path.basename(new_file_name))
 
     
     def retrieve(self, query: str, k: int = 5):
-        return self.new_weaviate_instance.similarity_search(query=query, k = k)
-    
-    
-    
-    def as_retriever(self):
-        return self.new_weaviate_instance.as_retriever()
-    
-    
+        """
+        Retrieves similar items from the Weaviate database.
+
+        Parameters:
+            query (str): Query text for similarity search.
+            k (int): Number of items to retrieve (default is 5).
+
+        Returns:
+            dict: Similar items retrieved from the Weaviate database.
+        """
+        return self.new_weaviate_instance.similarity_search(query=query, k=k)
