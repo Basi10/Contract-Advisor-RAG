@@ -3,3 +3,4 @@ weaviate-client
 Flask
 pytest
 sentence_transformers
+openai
