@@ -190,3 +190,91 @@ Total chunks: 732
 02-23-2024 13:53:23 : INFO : logger : Text preprocessing completed.
 02-23-2024 13:53:23 : INFO : logger : Text split using character splitter. Total chunks: 1064
 02-23-2024 13:53:28 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-23-2024 15:57:35 : INFO : logger : PDF data loaded successfully.
+02-23-2024 15:57:35 : INFO : logger : Text preprocessing completed.
+02-23-2024 15:57:35 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-23-2024 15:57:41 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-23-2024 16:13:35 : INFO : logger : PDF data loaded successfully.
+02-23-2024 16:13:35 : INFO : logger : Text preprocessing completed.
+02-23-2024 16:13:35 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-23-2024 16:13:42 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 05:56:34 : INFO : logger : PDF data loaded successfully.
+02-24-2024 05:56:34 : INFO : logger : Text preprocessing completed.
+02-24-2024 05:56:34 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 05:56:39 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 06:04:21 : INFO : logger : PDF data loaded successfully.
+02-24-2024 06:04:21 : INFO : logger : Text preprocessing completed.
+02-24-2024 06:04:21 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 06:04:27 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 06:09:50 : INFO : logger : PDF data loaded successfully.
+02-24-2024 06:09:50 : INFO : logger : Text preprocessing completed.
+02-24-2024 06:09:50 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 06:09:55 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 06:12:04 : INFO : logger : PDF data loaded successfully.
+02-24-2024 06:12:04 : INFO : logger : Text preprocessing completed.
+02-24-2024 06:12:04 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 06:12:09 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 06:16:08 : INFO : logger : PDF data loaded successfully.
+02-24-2024 06:16:08 : INFO : logger : Text preprocessing completed.
+02-24-2024 06:16:08 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 06:16:14 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 06:41:00 : INFO : logger : PDF data loaded successfully.
+02-24-2024 06:41:00 : INFO : logger : Text preprocessing completed.
+02-24-2024 06:41:00 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 06:41:15 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 06:50:26 : INFO : logger : PDF data loaded successfully.
+02-24-2024 06:50:26 : INFO : logger : Text preprocessing completed.
+02-24-2024 06:50:26 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 06:50:31 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 06:52:02 : INFO : logger : PDF data loaded successfully.
+02-24-2024 06:52:02 : INFO : logger : Text preprocessing completed.
+02-24-2024 06:52:02 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 06:52:08 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 06:54:29 : INFO : logger : PDF data loaded successfully.
+02-24-2024 06:54:29 : INFO : logger : Text preprocessing completed.
+02-24-2024 06:54:29 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 06:54:35 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 08:04:31 : INFO : logger : PDF data loaded successfully.
+02-24-2024 08:04:31 : INFO : logger : PDF data loaded successfully.
+02-24-2024 08:04:31 : INFO : logger : Text preprocessing completed.
+02-24-2024 08:04:31 : INFO : logger : Text preprocessing completed.
+02-24-2024 08:04:31 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 08:04:31 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 08:04:47 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 08:04:47 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 08:07:41 : INFO : logger : PDF data loaded successfully.
+02-24-2024 08:07:41 : INFO : logger : Text preprocessing completed.
+02-24-2024 08:07:41 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 08:07:46 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 08:12:35 : INFO : logger : PDF data loaded successfully.
+02-24-2024 08:12:35 : INFO : logger : Text preprocessing completed.
+02-24-2024 08:12:35 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 08:12:40 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 08:46:42 : INFO : logger : PDF data loaded successfully.
+02-24-2024 08:46:42 : INFO : logger : Text preprocessing completed.
+02-24-2024 08:46:42 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 08:46:47 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 08:49:18 : INFO : logger : PDF data loaded successfully.
+02-24-2024 08:49:18 : INFO : logger : Text preprocessing completed.
+02-24-2024 08:49:18 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 08:49:24 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 11:34:23 : INFO : logger : PDF data loaded successfully.
+02-24-2024 11:34:23 : INFO : logger : Text preprocessing completed.
+02-24-2024 11:34:23 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 11:34:29 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 13:13:20 : INFO : logger : PDF data loaded successfully.
+02-24-2024 13:13:20 : INFO : logger : Text preprocessing completed.
+02-24-2024 13:13:20 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 13:13:27 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 13:17:31 : INFO : logger : PDF data loaded successfully.
+02-24-2024 13:17:31 : INFO : logger : Text preprocessing completed.
+02-24-2024 13:17:31 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 13:17:38 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 17:04:17 : INFO : logger : PDF data loaded successfully.
+02-24-2024 17:04:17 : INFO : logger : PDF data loaded successfully.
+02-24-2024 17:04:17 : INFO : logger : Text preprocessing completed.
+02-24-2024 17:04:17 : INFO : logger : Text preprocessing completed.
+02-24-2024 17:04:17 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 17:04:17 : INFO : logger : Text split using character splitter. Total chunks: 1064
+02-24-2024 17:04:26 : INFO : logger : Text split using token splitter. Total chunks: 1064
+02-24-2024 17:04:26 : INFO : logger : Text split using token splitter. Total chunks: 1064
