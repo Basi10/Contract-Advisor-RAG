@@ -1,14 +1,14 @@
-# Lizzy AI Contract Q&A RAG System
+# Contract Q&A RAG System
 
 ## Objectives
 
-Lizzy AI is an early-stage Israeli startup aiming to develop the next-generation contract AI. As part of this mission, our objective is to build, evaluate, and improve a RAG (Retrieval-Augmented Generation) system for Contract Q&A. This system will enable users to chat with a contract and ask questions about it, with the ultimate goal of creating a fully autonomous contract bot that can draft, review, and negotiate contracts independently.
+Our client is an early-stage startup aiming to develop the next-generation contract AI. As part of this mission, our objective is to build, evaluate, and improve a RAG (Retrieval-Augmented Generation) system for Contract Q&A. This system will enable users to chat with a contract and ask questions about it, with the ultimate goal of creating a fully autonomous contract bot that can draft, review, and negotiate contracts independently.
 
 ## Docker Usage
 
 Prerequisites:
 
-Ensure you have Docker installed on your machine.
+Ensure you have Docker installed on your machine. You need to have a Weaviate vector database instance, and an OpenAI api key.
 Build and Run:
 
 Clone this repository to your local machine.
@@ -23,16 +23,16 @@ Navigate to the project directory.
 cd Contract-Advisor-RAG
 ```
 
-Build the Docker image
+Setup enviroment variables. Ensure to fill those values with appropriate values
 
 ```bash
-docker build -t lizzy-ai-rag-system .
+make env
 ```
 
 Run the Docker container
 
 ```bash
-docker run -p 3000:3000 lizzy-ai-rag-system
+make build
 ```
 
 Access the system through the provided localhost:3000
