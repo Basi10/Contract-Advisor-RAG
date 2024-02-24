@@ -63,4 +63,4 @@ class Evaluation:
                 classification = 'false'
             else:
                 classification = 'false'
-        return classification
+        return classification, logprob.logprob

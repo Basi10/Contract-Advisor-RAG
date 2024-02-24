@@ -32,6 +32,7 @@ class Retriever:
         self.weaviate_client = weaviate_client
         self.embeddings = embeddings
         self.generator = Generation("gpt-4-turbo-preview")
+        self.pdf_context = self.pdf.process_pdf()
         
     def key_word(self, query: str):
         """
@@ -117,7 +118,7 @@ class Retriever:
                 
         return valid_context
     
-    def retrieve(self, query: str, file_path: str):
+    def retrieve(self, query: str, file_path: str = '../data/Raptor Contract.docx.pdf'):
         """
         Retrieve valid context documents based on the given query and file path.
 
@@ -129,9 +130,8 @@ class Retriever:
             list: Valid context documents.
         """
         data = Database(weaviate_client=self.weaviate_client, embeddings=self.embeddings, file_path=file_path)
-        pdf_context = self.pdf.process_pdf()
         key_word = self.key_word(query)
-        keyword_context = self.key_word_search(keyword=key_word, data=pdf_context)
+        keyword_context = self.key_word_search(keyword=key_word, data=self.pdf_context)
         context_data = data.retrieve(query)
         eval_docs = self.selecting_context(keyword_context=keyword_context, vectordb_context=context_data, query=query)
         valid_context = self.evaluate_context(query, eval_docs)

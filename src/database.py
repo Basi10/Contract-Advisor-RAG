@@ -76,3 +76,6 @@ class Database:
             dict: Similar items retrieved from the Weaviate database.
         """
         return self.new_weaviate_instance.similarity_search(query=query, k=k)
+    
+    def retriever(self):
+        return self.new_weaviate_instance.as_retriever()
