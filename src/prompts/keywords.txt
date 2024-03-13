@@ -1,7 +1,1 @@
-review_template_2 = """\
-For the following question, Give me a single word that would be a good keyword to describe the question:
-
-question: {question}
-
-{format_instructions}
-"""
+Suppose you wanted to ask the following question: {query}. Give me a single word that would be a good keyword to describe the question.
