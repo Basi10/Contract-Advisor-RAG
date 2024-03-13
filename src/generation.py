@@ -12,9 +12,9 @@ class Generation:
         Parameters:
             model_name (str): Name of the model.
         """
+        self.model_name = model_name
         self.client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-        llm_model = "gpt-3.5-turbo"
-        self.chat = ChatOpenAI(api_key=os.environ.get("OPENAI_API_KEY"), temperature=0.0, model=llm_model)
+        self.chat = ChatOpenAI(api_key=os.environ.get("OPENAI_API_KEY"), temperature=0.0, model=model_name)
         
     def chats(self, message):
         """
@@ -72,3 +72,13 @@ class Generation:
 
         completion = self.client.chat.completions.create(**params)
         return completion
+    
+    def get_keyword(self, prompt , query):
+        client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+        response = client.chat.completions.create(
+        model=self.model_name,
+        messages=[
+            {"role": "user", "content": prompt.format(query=query)},
+        ]
+        )
+        return response.choices[0].message.content
