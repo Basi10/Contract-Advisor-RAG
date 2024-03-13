@@ -8,7 +8,7 @@ class Evaluation:
         """
         Initialize the Evaluation instance with a Generation instance.
         """
-        self.generator = Generation("gpt-4-turbo-preview")
+        self.generator = Generation("gpt-3.5-turbo")
         
     def ranking_query(self, matching_documents: list, query: str):
         """
@@ -47,7 +47,7 @@ class Evaluation:
                     "content": prompt.replace("{Context}", context).replace("{Question}", user_message)
                 }
             ],
-            model='gpt-4-turbo-preview',
+            model='gpt-3.5-turbo',
             logprobs=True,
             top_logprobs=1,
         )
@@ -56,11 +56,10 @@ class Evaluation:
 
         for i, logprob in enumerate(API_RESPONSE.choices[0].logprobs.content[0].top_logprobs, start=1):
             output = f'\nhas_sufficient_context_for_answer: {system_msg}, \nlogprobs: {logprob.logprob}, \naccuracy: {np.round(np.exp(logprob.logprob)*100,2)}%\n'
-            print(output)
             if system_msg == 'true' and np.round(np.exp(logprob.logprob)*100,2) >= 95.00:
                 classification = 'true'
             elif system_msg == 'false' and np.round(np.exp(logprob.logprob)*100,2) >= 95.00:
                 classification = 'false'
             else:
                 classification = 'false'
-        return classification, logprob.logprob
+        return classification

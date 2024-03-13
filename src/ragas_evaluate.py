@@ -6,8 +6,6 @@ from langchain_openai import OpenAIEmbeddings
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.chains import RetrievalQA
-from langchain.schema.runnable import RunnablePassthrough
-from langchain.schema.output_parser import StrOutputParser
 from ragas.langchain.evalchain import RagasEvaluatorChain
 from ragas.metrics import faithfulness, answer_relevancy, context_recall, context_relevancy
 from ragas.langchain.evalchain import RagasEvaluatorChain
@@ -97,7 +95,7 @@ class Ragas:
             faithfulness_score, context_recall_score, answer_rel_score, context_relevancy_score = self.evaluate_metrics(result)
             results_list.append({
                 "Question": result.get('query'),
-                "Context": result.get('source_documents'),  # Assuming context is the first source document
+                "Context": result.get('source_documents'),  
                 "Ground_Truth": result.get('ground_truths'),
                 "Answer": result.get('result'),
                 "Faithfulness_Score": faithfulness_score,
@@ -106,7 +104,6 @@ class Ragas:
                 "Context_Relevancy_Score": context_relevancy_score
             })
             
-            print(results_list)
             
         return pd.DataFrame(results_list)
 

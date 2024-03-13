@@ -53,7 +53,7 @@ class PDFProcessor:
             self.character_split_texts = character_splitter.split_text('\n\n'.join(self.pdf_texts))
             self.logger.info(f"Text split using character splitter. Total chunks: {len(self.character_split_texts)}")
 
-            token_splitter = SentenceTransformersTokenTextSplitter(chunk_overlap=0, tokens_per_chunk=256)
+            token_splitter = SentenceTransformersTokenTextSplitter(chunk_overlap=50, tokens_per_chunk=256)
             self.token_split_texts = []
             for text in self.character_split_texts:
                 self.token_split_texts += token_splitter.split_text(text)
