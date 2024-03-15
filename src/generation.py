@@ -26,7 +26,14 @@ class Generation:
         Returns:
             str: Response from the model.
         """
-        return self.chat(message)
+        response = self.client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+            {"role": "user", "content": message}
+            ]
+        )
+        return response.choices[0].message.content
+    
     
     def get_completion(
         self,
@@ -82,3 +89,16 @@ class Generation:
         ]
         )
         return response.choices[0].message.content
+    
+    
+    def generate_answer(self, context, question):
+        file_path = '../src/prompts/generate-answer.txt'
+
+        # Open the file in read mode ('r')
+        with open(file_path, 'r') as file:
+            # Read the entire contents of the file
+            file_content = file.read()
+            
+        message = file_content.replace('{question}',question).replace('{context}',context)
+         
+        return self.chats(message)
