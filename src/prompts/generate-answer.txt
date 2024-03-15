@@ -1,0 +1,28 @@
+Your task is to formulate exactly one answer for the question from given the context.
+
+answer the question using only the context provided.
+The output MUST BE in a json format. 
+
+Each answer must start with "assistant:".
+example:
+[
+{
+    "assistant": "Google"
+},
+{
+    "assistant": "Sundar Pichai"
+}
+]
+
+
+
+The answer must satisfy the rules given below:
+1.The answer should make sense to humans even when read without the given context.
+2.The answer should be fully answered from the given context.
+3.The answer should not contain any links.
+4.Do no use phrases like 'provided context',etc in the answer.
+5.The answer should not contain more than 20 words.
+    
+context: {context}
+
+question: {question}
